@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeTech | Bienvenido</title>
+    <!-- Conectamos el archivo CSS. -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/he_pie.css">
+    <script src="js/menu.js" defer></script>
+
+</head>
+<body>
+    <a class="saltar" href="#contenido">Ir al contenido</a>
+
+    <!-- Cabecera: contiene el logo y el menú. -->
+    <header class="cabecera" id="inicio">
+        <div class="contenedor barra">
+            <!-- Poner logo aquí. Puedes reemplazar el texto por una imagen. -->
+            <a class="logo" href="#inicio" aria-label="CoffeeTech, ir al inicio">
+                <img src="imagenes/cafetera.png" alt="" width="42" height="42">
+                CoffeeTech</a>
+<!--Luego se va a cambiar la imagen del logo-->
+
+    <button id="boton-menu" class="hamburguesa" type="button"
+            aria-controls="navegacion" aria-expanded="false" aria-label="Abrir menú">
+    <span class="lineas" aria-hidden="true"><span></span><span></span><span></span></span>
+    <span id="texto-menu">Menú</span>
+        </button>
+        <nav id="navegacion" class="navegacion" aria-label="Navegación principal">
+
+            <!-- Menú horizontal con un submenú vertical. -->
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li>
+                        <!-- Al hacer clic se abre o cierra el submenú. -->
+                        <details id = "productos" class="desplegable">
+                            <summary>Productos</summary>
+                            <ul class="submenu">
+                                <li><a href="#galeria">Ver productos</a></li>
+                                <li><a href="#fila-superior">Cafe en grano</a></li>
+                                <li><a href="#fila-inferior">Accesorios</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cuerpo: cada sección agrupa contenido relacionado. -->
+    <main id="contenido">
+        <section class="presentacion">
+            <div class="contenedor">
+                <p class="etiqueta">Conoce acerca el café de especialidad</p>
+                <h1>Como un diminuto grano puede cambiar como vives</h1>
+                <p>Aprende, investiga, actualizate y compra.</p>
+                <a class="boton" href="#galeria">Explorar productos</a>
+            </div>
+        </section>
+
+        <section class="seccion" id="nosotros">
+            <div class="contenedor">
+                <p class="etiqueta">SOBRE NOSOTROS</p>
+                <h2>Un hogar donde todo se trata del café</h2>
+                <!-- Reemplazar este texto por la descripción del proyecto. -->
+                <p>Somos un espacio dedicado a los amantes del café de especialidad.</p>
+            </div>
+        </section>
+
+        <section class="seccion fondo-suave" id="galeria">
+            <div class="contenedor">
+                <p class="etiqueta">Nuestros productos</p>
+                <h2>Diversos productos</h2>
+                <p class="introduccion">Desde granos de café hasta accesorios.</p>
+
+                <!-- Primera fila: tres imágenes. -->
+                <div class="fila-galeria" id="fila-superior">
+                    <div class="tarjeta">
+                        <!-- Cambiar la ruta y el texto alternativo al usar otra imagen. -->
+                        <img src="imagenes\ThreeMonkeys-CafeGrano1.png" alt="Grano Cafe 1" width="400" height="600" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Three Monkeys - Cuzco</h3>
+                            <p>Descripción breve del proyecto.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <!-- Cambiar la ruta y el texto alternativo al usar otra imagen. -->
+                        <img src="imagenes\Candelaria-CafeGrano2.png" alt="Grano Cafe 2" width="400" height="600" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Candelaria - Puno</h3>
+                            <p>Descripción breve del proyecto.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <!-- Cambiar la ruta y el texto alternativo al usar otra imagen. -->
+                        <img src="imagenes\CafeFideria-CafeGrano3.png" alt="Grano Cafe 3" width="400" height="600" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Fideria - Villa Rica</h3>
+                            <p>Descripción breve del proyecto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda fila: tres imágenes. -->
+                <div class="fila-galeria" id="fila-inferior">
+                    <div class="tarjeta">
+                        <!-- Cambiar la ruta y el texto alternativo al usar otra imagen. -->
+                        <img src="imagenes\V60.png" alt="V60" width="400" height="600" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Hario V60</h3>
+                            <p>Descripción breve del proyecto.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <!-- Cambiar la ruta y el texto alternativo al usar otra imagen. -->
+                        <img src="imagenes\Chemex.png" alt="Chemex" width="400" height="600" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Chemex Classic Series 8-Cup</h3>
+                            <p>Descripción breve del proyecto.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <!-- Cambiar la ruta y el texto alternativo al usar otra imagen. -->
+                        <img src="imagenes\KINGrinderK6.png" alt="Molino" width="400" height="600" loading="lazy">
+                        <div class="texto-tarjeta">
+                            <h3>Molino de café KINGrinder K6</h3>
+                            <p>Descripción breve del proyecto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="https://imgs.search.brave.com/2o7RzqfBrDZ36rVqMa9KhObglX7K6tmnzUSO0Sdk67M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRpbmdwZXJ1LmJl/Z2xvYmFsLmJpei93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/MS9sb2dvLXVwYy1w/bmctdHJhbnNwYXJl/bnRlLTEucG5n"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>CoffeeTech</p>
+            <small>© 2026 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="documentos/politica_aip.pdf">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a
+              href="https://www.godaddy.com/resources/es/recursos/como-definir-los-terminos-y-condiciones-y-la-politica-de-privacidad-de-tu-tienda-online"
+              >Términos y Condiciones</a
+            >
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="documentos/LeyProteccion.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+</body>
+</html>
