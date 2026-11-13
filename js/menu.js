@@ -5,7 +5,7 @@ const textoMenu = document.querySelector('#texto-menu');
 const submenu = document.querySelector('#productos');
 
 // PASO 2. Usar exactamente el mismo límite que la media query del CSS.
-const pantallaMovil = window.matchMedia('(max-width: 700px)');
+const pantallaMovil = window.matchMedia('(max-width: 600px)');
 
 // PASO 3. Una función concentra los cambios para abrir o cerrar el menú.
 function cambiarMenu(abrir) {
