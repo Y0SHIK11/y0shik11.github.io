@@ -2,7 +2,7 @@
 const botonMenu = document.querySelector('#boton-menu');
 const navegacion = document.querySelector('#navegacion');
 const textoMenu = document.querySelector('#texto-menu');
-const submenu = document.querySelector('#resolver');
+const submenu = document.querySelector('#productos');
 
 // PASO 2. Usar exactamente el mismo límite que la media query del CSS.
 const pantallaMovil = window.matchMedia('(max-width: 600px)');
