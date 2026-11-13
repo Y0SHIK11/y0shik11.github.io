@@ -133,6 +133,69 @@
                 </div>
             </div>
         </section>
+        <!-- Nueva sección: Preguntas Frecuentes (FAQ) -->
+        <section class="seccion" id="faq">
+            <div class="contenedor">
+                <p class="etiqueta">Resolvemos tus dudas</p>
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-contenedor">
+                    <details class="faq-item">
+                        <summary>¿Realizan envíos a todo el país?</summary>
+                        <p>Sí, enviamos nuestros granos de café y accesorios a nivel nacional. Los tiempos de entrega varían entre 2 a 4 días hábiles dependiendo de tu ubicación.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Qué tipo de molienda recomiendan para la Chemex o V60?</summary>
+                        <p>Para métodos de filtrado manual, recomendamos una molienda media o media-gruesa para extraer correctamente todas las notas del café de especialidad.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Tienen tienda física donde pueda ver los accesorios?</summary>
+                        <p>Por ahora operamos de forma 100% virtual, pero en cada ficha de producto incluimos especificaciones detalladas para guiar tu compra.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección: Encuesta -->
+        <section class="seccion fondo-suave" id="encuesta">
+            <div class="contenedor">
+                <p class="etiqueta">Tu opinión nos ayuda a mejorar</p>
+                <h2>¿Qué te pareció CoffeeTech?</h2>
+                <p class="introduccion">Déjanos tus comentarios para seguir trayendo los mejores granos y accesorios.</p>
+                
+                <form action="#" method="get" class="formulario">
+                    <div class="grupo-form">
+                        <label>¿Fue fácil navegar por nuestro catálogo de productos?</label>
+                        <div class="opciones-radio">
+                            <input type="radio" id="facil-si" name="navegacion" value="si" checked>
+                            <label for="facil-si">Sí, fue muy intuitivo</label>
+                            
+                            <input type="radio" id="facil-no" name="navegacion" value="no">
+                            <label for="facil-no">No, me costó encontrar lo que buscaba</label>
+                        </div>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="calificacion">Califica tu experiencia</label>
+                        <select id="calificacion" name="calificacion" required>
+                            <option value="">Selecciona una nota</option>
+                            <option value="5">5 - Excelente (Me encantó el café)</option>
+                            <option value="4">4 - Buena</option>
+                            <option value="3">3 - Regular</option>
+                            <option value="2">2 - Mala</option>
+                            <option value="1">1 - Pésima</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="comentarios">¿Alguna sugerencia de nuevo producto o región de café?</label>
+                        <textarea id="comentarios" name="comentarios" rows="3" placeholder="Por ejemplo: Me gustaría que traigan café de Cajamarca..."></textarea>
+                    </div>
+
+                    <button type="submit" class="boton">Enviar respuestas</button>
+                </form>
+            </div>
+        </section>
+
     </main>
 
         <!-- PIE DE PAGINA -->
