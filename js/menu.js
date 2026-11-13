@@ -5,7 +5,7 @@ const textoMenu = document.querySelector('#texto-menu');
 const submenu = document.querySelector('#productos');
 
 // PASO 2. Usar exactamente el mismo límite que la media query del CSS.
-const pantallaMovil = window.matchMedia('(max-width: 600px)');
+const pantallaMovil = window.matchMedia('(max-width: 700px)');
 
 // PASO 3. Una función concentra los cambios para abrir o cerrar el menú.
 function cambiarMenu(abrir) {
@@ -44,7 +44,7 @@ navegacion.addEventListener('click', function (evento) {
 });
 
 // La marca también regresa al inicio y cierra la navegación.
-document.querySelector('.marca').addEventListener('click', function () {
+document.querySelector('.logo').addEventListener('click', function () {
   cambiarMenu(false);
   const inicio = document.querySelector('#inicio');
   if (inicio) inicio.focus({ preventScroll: true });
