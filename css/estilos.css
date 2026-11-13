@@ -448,6 +448,19 @@ h2 {
     resize: vertical;
 }
 
+.opciones-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.opciones-check label {
+    font-weight: normal;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
 /* Ajustes del formulario para celulares */
 @media (max-width: 600px) {
     .formulario {
