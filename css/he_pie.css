@@ -39,9 +39,10 @@
 .footer-links {
   flex: 1;
   min-width: 200px;
-  font-family: "Jim Nightshade", cursive;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: italic;
+  padding-left: 5rem;
 }
 
 .footer-links a {
@@ -49,6 +50,9 @@
   color: #000000;
   text-decoration: none;
   margin: 0.3rem 0;
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer-links a:hover {
