@@ -201,6 +201,37 @@ section[id] {
   }
 }
 
+/* =========================================
+   SECCIÓN NOSOTROS (2 COLUMNAS Y VIDEO)
+   ========================================= */
+.dos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+    align-items: center;
+}
+
+/* Evita que el contenido de las columnas se desborde */
+.dos-columnas > * {
+    min-width: 0;
+}
+
+/* Mantiene el formato panorámico nativo de YouTube */
+.video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+    border-radius: 8px; /* Bordes suaves para que combine con tus tarjetas */
+}
+
+/* Adaptación para pantallas de celular */
+@media (max-width: 700px) {
+    .dos-columnas {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
 
 /* Presentación principal. */
 .presentacion {
