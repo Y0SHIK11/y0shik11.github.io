@@ -157,8 +157,8 @@ section[id] {
   scroll-margin-top: 110px;
 }
 
-/* PASO 7. CELULAR: 700 px. El JS usa el mismo límite. */
-@media (max-width: 700px) {
+/* PASO 7. CELULAR: 600 px. El JS usa el mismo límite. */
+@media (max-width: 600px) {
   .barra {
     padding: .6rem 0;
   }
@@ -226,8 +226,8 @@ section[id] {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
 }
 
-/* En celulares (700px o menos), el video bajará automáticamente debajo del texto */
-@media (max-width: 700px) {
+/* En celulares (600px o menos), el video bajará automáticamente debajo del texto */
+@media (max-width: 600px) {
     .dos-columnas {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -326,7 +326,7 @@ h2 {
 
 
 /* En pantallas pequeñas, el contenido se adapta al espacio. */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .barra {
         flex-direction: column;
         align-items: flex-start;
@@ -394,7 +394,7 @@ h2 {
 
 /* Formulario */
 .formulario {
-    max-width: 700px;
+    max-width: 800px;
     background-color: #f8f1eb;
     border: 1px solid #dde5e8;
     border-radius: 10px;
@@ -449,7 +449,7 @@ h2 {
 }
 
 /* Ajustes del formulario para celulares */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .formulario {
         padding: 20px;
     }
